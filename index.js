@@ -32,6 +32,7 @@ morgan.token("body", (req) =>
 
 app.use(
   e.json(),
+  e.static("dist"),
   cors({
     origin: "http://localhost:5173",
     optionsSuccessStatus: 200,
