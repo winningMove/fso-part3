@@ -28,14 +28,15 @@ try {
   await mongoose.connect(mongo_uri);
 
   switch (argc) {
-    case 3:
+    case 3: {
       const persons = await Person.find({});
       console.log("Phonebook:");
       persons.forEach(({ name, number }) => {
         console.log(`${name} ${number}`);
       });
       break;
-    case 5:
+    }
+    case 5: {
       const newPerson = new Person({
         name: process.argv[3],
         number: process.argv[4],
@@ -43,6 +44,7 @@ try {
       const { name, number } = await newPerson.save();
       console.log(`Added ${name} number ${number} to phonebook`);
       break;
+    }
   }
 } catch (error) {
   console.error("Error connecting or during operations:", error);

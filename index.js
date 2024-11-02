@@ -78,7 +78,7 @@ app
   .post(async (req, res, next) => {
     const { name, number } = req.body;
 
-    /* 
+    /*
     -- duplicate names can currently still be added via direct POST,
     -- this is validation code from a previous exercise that required it
 
