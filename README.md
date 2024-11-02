@@ -1,3 +1,3 @@
-# Full Stack Open part3 repo for phonebook backend exercises, 3.1-
+# Full Stack Open part3 repo for phonebook backend exercises, 3.1-3.22.
 
-## served at: https://phonebook-backend-yozr.onrender.com
+## deployed at: https://phonebook-backend-yozr.onrender.com
